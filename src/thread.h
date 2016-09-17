@@ -66,10 +66,12 @@ public:
   Position rootPos;
   Search::RootMoves rootMoves;
   Depth rootDepth;
-  HistoryStats history;
-  MoveStats counterMoves;
   Depth completedDepth;
   std::atomic_bool resetCalls;
+  HistoryStats history;
+  MoveStats counterMoves;
+  FromToStats fromTo;
+  CounterMoveHistoryStats counterMoveHistory;
 };
 
 
